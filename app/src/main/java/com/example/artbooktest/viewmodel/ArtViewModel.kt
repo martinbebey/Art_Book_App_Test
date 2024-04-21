@@ -59,7 +59,7 @@ class ArtViewModel @Inject constructor(
             return
         }
 
-        val yeartInt = try{
+        val yearInt = try{
             year.toInt()
         }
         catch (e: Exception){
@@ -67,7 +67,7 @@ class ArtViewModel @Inject constructor(
             return
         }
 
-        val art = Art(name, artistName, year, selectedImage.value?:"")
+        val art = Art(name, artistName, yearInt, selectedImage.value?:"")
         insertArt(art)
         setSelectedImge("")
         insertArtMsg.postValue(Resource.success(art))
