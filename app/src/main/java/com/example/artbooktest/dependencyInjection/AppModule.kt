@@ -38,7 +38,7 @@ object AppModule {
 
     @Singleton
     @Provides
-    fun inkectDao(database: ArtDatabase) = database.artDao()
+    fun injectDao(database: ArtDatabase) = database.artDao()
 
     @Singleton
     @Provides
