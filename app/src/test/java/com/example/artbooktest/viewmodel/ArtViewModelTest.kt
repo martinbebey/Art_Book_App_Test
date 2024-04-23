@@ -4,7 +4,6 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.example.artbooktest.MainCoroutineRule
 import com.example.artbooktest.Util.Status
 import com.example.artbooktest.getOrAwaitValueTest
-import com.example.artbooktest.repo.ArtRepository
 import com.example.artbooktest.repo.FakeArtRepository
 import com.google.common.truth.Truth.assertThat
 import org.junit.Before
